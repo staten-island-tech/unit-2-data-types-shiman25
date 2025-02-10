@@ -92,7 +92,7 @@ except ValueError:  # This block runs if the user enters something
     print("Invalid. Please Try Again") 
  """
 #Challenge.2 alt
-try:
+""" try:
     bill = float(input("What is your bill? "))
 except ValueError:
     print("Invalid. Please Try Again")
@@ -110,4 +110,22 @@ elif service == "great":
 else:
     print("Invalid. Please Try Again") 
 
-print(f"Recommended tips: {round(tips,2)}")
+print(f"Recommended tips: {round(tips,2)}") """
+
+#challenge.3
+
+
+#use modeulo to check remainder for 1 factor
+#use a loop to check all potential factors range(2,15)
+#conditional statement if factor append to list
+
+def find_factors(number): #define the finding of the number
+    list = [1] #starting the list of 1
+    for i in range(2,number): #i is the number in the range between 2 and number-1
+        if number % i == 0: #if number divided by i evenly
+           factors.append(i) #put it in the factors list
+        factors.append(number) #the number is always factors of itself
+
+number = int(input("Type a number: ")) #type a number
+factors = find_factors(number) #find the factors of a number
+print(factors)
