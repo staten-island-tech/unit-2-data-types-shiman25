@@ -114,18 +114,45 @@ print(f"Recommended tips: {round(tips,2)}") """
 
 #challenge.3
 
-
-#use modeulo to check remainder for 1 factor
+#use modulo to check remainder for 1 factor
 #use a loop to check all potential factors range(2,15)
 #conditional statement if factor append to list
 
 def find_factors(number): #define the finding of the number
-    list = [1] #starting the list of 1
-    for i in range(2,number): #i is the number in the range between 2 and number-1
+    x = [1] #starting the list of 1
+    for i in range(2, number): #i is the number in the range between 2 and number-1
         if number % i == 0: #if number divided by i evenly
-           factors.append(i) #put it in the factors list
-        factors.append(number) #the number is always factors of itself
-
+            x.append(i) #put it in the factors list    
+    x.append(number) #the number is always factors of itself
+    return(x)
 number = int(input("Type a number: ")) #type a number
 factors = find_factors(number) #find the factors of a number
 print(factors)
+
+
+""" isRich = True
+is21 = True
+def canGamble(isRich, is21):
+    if isRich == True and is21 == True:
+        print("Let it ride!")
+    elif isRich == False and is21 == True:
+        print("your too poor!")
+    elif isRich == False or is21 == False:
+        print("you cannot play") """
+
+#LastChallenge
+#set x and y as the 2 numbers
+#find factors of BOTH at the same time
+#if find then stop.
+#print that number
+x = int(input("Type in a whole number: "))
+y = int(input("Type in another whole number: "))
+def useNum(x,y):
+    number
+    if x > y:
+        number = y
+    else:
+        number = x
+print(number)
+def gcf(number):
+    for i in range(2,number)
