@@ -118,7 +118,7 @@ print(f"Recommended tips: {round(tips,2)}") """
 #use a loop to check all potential factors range(2,15)
 #conditional statement if factor append to list
 
-def find_factors(number): #define the finding of the number
+""" def find_factors(number): #define the finding of the number
     x = [1] #starting the list of 1
     for i in range(2, number): #i is the number in the range between 2 and number-1
         if number % i == 0: #if number divided by i evenly
@@ -127,7 +127,7 @@ def find_factors(number): #define the finding of the number
     return(x)
 number = int(input("Type a number: ")) #type a number
 factors = find_factors(number) #find the factors of a number
-print(factors)
+print(factors) """
 
 
 """ isRich = True
@@ -147,12 +147,26 @@ def canGamble(isRich, is21):
 #print that number
 x = int(input("Type in a whole number: "))
 y = int(input("Type in another whole number: "))
-def useNum(x,y):
-    number
-    if x > y:
-        number = y
+
+def find(num1,num2): #comparing 2 nums
+    if num1 > num2: 
+        good = num1
+        return(good)
     else:
-        number = x
-print(number)
-def gcf(number):
-    for i in range(2,number)
+        good = num2
+        return(good)
+good = find(x,y)
+
+def gcf(num1,num2): #Finding the gcf of 2 numbers
+    factors = [1] #the list of common factors
+    trash = [1] #the list of numbers that does not meet the requirement
+    for i in range(2,good): #loop from 2 to num2?
+        if num1%i != 0 or num2%i != 0: #if the number i is not one or both factor
+            trash.append(i) #move to trash
+        elif num1%i == 0 and num2%i == 0: #if number i is both numbers' factor
+            factors.append(i) #sent it to factors list
+            
+    print(factors[-1]) #print the last number of the factors list
+
+
+GreatestCommonFactor = gcf(x,y)
