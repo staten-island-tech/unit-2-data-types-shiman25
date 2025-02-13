@@ -168,5 +168,20 @@ def gcf(num1,num2): #Finding the gcf of 2 numbers
             
     print(factors[-1]) #print the last number of the factors list
 
-
 GreatestCommonFactor = gcf(x,y)
+###############################################################################
+""" x = int(input("Type in a whole number: "))
+y = int(input("Type in another whole number: "))
+
+def gcf(num1,num2): #Finding the gcf of 2 numbers       
+  
+    if num1 < num2: 
+        smaller = num1
+    else:
+        smaller = num2
+        
+    for i in range(smaller, 0 , -1): #loop from the smaller num backwards
+        if num1%i == 0 and num2%i == 0: #if the number i is both factor
+            print(i)
+            return(i)
+GreatestCommonFactor = gcf(x,y) """
