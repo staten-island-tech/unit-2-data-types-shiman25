@@ -67,12 +67,12 @@ if temp > 68:
     print('warm')
  """
 
-""" #Challenge
+#Challenge
 number = int(input("Type in a integer! ")) #let user type in a num
 if number%2 == 0: #if the remainder is 0 when divided by 2, is even
     print("The Number is Even! :) ") 
 else: #if the remainder is anything else; which can only be 1
-    print("The Number is Odd! :( ") """
+    print("The Number is Odd! :( ")
 
 #Challenge.2 
 """ try:
@@ -119,7 +119,7 @@ print(f"Recommended tips: {round(tips,2)}")
 #use a loop to check all potential factors range(2,15)
 #conditional statement if factor append to list
 
-""" def find_factors(number): #define the finding of the number
+def find_factors(number): #define the finding of the number
     x = [1] #starting the list of 1
     for i in range(2, number): #i is the number in the range between 2 and number-1
         if number % i == 0: #if number divided by i evenly
@@ -128,10 +128,10 @@ print(f"Recommended tips: {round(tips,2)}")
     return(x)
 number = int(input("Type a number: ")) #type a number
 factors = find_factors(number) #find the factors of a number
-print(factors) """
+print(factors) 
 
 
-""" isRich = True
+isRich = True
 is21 = True
 def canGamble(isRich, is21):
     if isRich == True and is21 == True:
@@ -139,7 +139,7 @@ def canGamble(isRich, is21):
     elif isRich == False and is21 == True:
         print("your too poor!")
     elif isRich == False or is21 == False:
-        print("you cannot play") """
+        print("you cannot play")
 
 #LastChallenge
 #set x and y as the 2 numbers
@@ -171,7 +171,7 @@ def gcf(num1,num2): #Finding the gcf of 2 numbers
 
 GreatestCommonFactor = gcf(x,y) """
 ###############################################################################
-""" x = int(input("Type in a whole number: "))
+x = int(input("Type in a whole number: "))
 y = int(input("Type in another whole number: "))
 
 def gcf(num1,num2): #Finding the gcf of 2 numbers       
@@ -185,4 +185,4 @@ def gcf(num1,num2): #Finding the gcf of 2 numbers
         if num1%i == 0 and num2%i == 0: #if the number i is both factor
             print(i)
             return(i)
-GreatestCommonFactor = gcf(x,y) """
+GreatestCommonFactor = gcf(x,y)
