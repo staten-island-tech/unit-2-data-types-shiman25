@@ -92,7 +92,7 @@ except ValueError:  # This block runs if the user enters something
     print("Invalid. Please Try Again") 
  """
 #Challenge.2 alt
-try:
+""" try:
     bill = float(input("What is your bill? "))
 except ValueError:
     print("Invalid. Please Try Again")
@@ -111,7 +111,7 @@ else:
     print("Invalid. Please Try Again") 
     exit()
 
-print(f"Recommended tips: {round(tips,2)}")
+print(f"Recommended tips: {round(tips,2)}") """
 
 #challenge.3
 
@@ -146,7 +146,7 @@ def canGamble(isRich, is21):
 #find factors of BOTH at the same time
 #if find then stop.
 #print that number
-""" x = int(input("Type in a whole number: "))
+x = int(input("Type in a whole number: "))
 y = int(input("Type in another whole number: "))
 
 def find(num1,num2): #comparing 2 nums
@@ -169,7 +169,7 @@ def gcf(num1,num2): #Finding the gcf of 2 numbers
             
     print(factors[-1]) #print the last number of the factors list
 
-GreatestCommonFactor = gcf(x,y) """
+GreatestCommonFactor = gcf(x,y)
 ###############################################################################
 x = int(input("Type in a whole number: "))
 y = int(input("Type in another whole number: "))
